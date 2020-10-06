@@ -1,0 +1,41 @@
+<div class="item">
+    <div>Avatar Url</div>
+    <div>
+        <input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Professor</div>
+    <div>
+        <input type="text" name="name" placeholder="Nome Completo"value="{{teacher.name}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Data de nascimento</div>
+    <div><input type="date" name="birth" value="{{teacher.birth}}"></div>
+</div>
+
+<div class="item">
+    <div>Grau de Escolaridade</div>
+    <select name="grau">
+        <option value="medio">Ensino Médio completo</option>
+        <option value="superior">Ensino Superior completo</option>
+        <option value="mestre">Mestrado</option>
+        <option value="dr">Doutorado</option>
+    </select>
+</div>
+
+<div class="item">
+    <div>Tipo das aulas</div>
+    <span><input type="radio" name="aula_type" value="presencial" checked="checked">Aula presencial</span>
+    <span><input type="radio" name="aula_type" value="distancia">Aula à distância</span>
+</div>
+
+<div class="item">
+    <div>Matérias que leciona</div>
+    <div>
+        <input type="text" name="materias" value="{{teacher.materias}}" placeholder="separe as matérias por virgula">
+    </div>
+</div>

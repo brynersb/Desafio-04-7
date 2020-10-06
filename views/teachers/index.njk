@@ -1,0 +1,43 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="card table-container">
+        <a href="/teachers/create">CRIAR</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Professor</th>
+                    <th>Aulas</th>
+                    <th>Tipo de Aula</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for teacher in teachers %}
+                    <tr>
+                        <td>
+                            <span style="background-image: url({{teacher.avatar_url}})"></span>
+                            {{teacher.name}}
+                        </td>
+                        <td>
+                        {% for materias in teacher.materias.split(',') %}
+                            <span class="areas">{{materias}}</span>
+                        {% endfor %}
+                        </td>
+                        <td>
+                            {{teacher.aula_type }}
+                        </td>
+                        <td>
+                            <a href="/teachers/{{teacher.id}}">VER</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </section>
+</div>
+
+{% endblock content %}
