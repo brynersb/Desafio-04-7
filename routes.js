@@ -1,20 +1,20 @@
 const express = require('express')
 const routes = express.Router()
 const teachers = require('./controllers/teachers')
+const students = require ('./controllers/students')
 const data = require('./data.json')
+
 
 routes
     .get("/", function (req, res) {
         return res.redirect("/teachers/")
     })
 
-    .get("/teachers/", function (req, res) {
-        return res.render("./teachers/index", { teachers: data.teachers })
-    })
+//Routes Studats
 
-    .get("/teachers/create", function (req, res) {
-        return res.render("./teachers/create")
-    })
+    .get("/teachers/", teachers.index)
+
+    .get("/teachers/create", teachers.create)
 
     .post("/teachers/", teachers.post)
 
@@ -26,10 +26,22 @@ routes
 
     .delete("/teachers", teachers.delete)
 
-    .get("/studants", function (req, res) {
+// Rutes Studentes
 
-        return res.render("./studants/index")
-    })
+
+    .get("/students/", students.index)
+
+    .get("/students/create", students.create)
+
+    .post("/students/", students.post)
+
+    .get("/students/:id", students.show)
+
+    .get("/students/:id/edit", students.edit)
+
+    .put("/students", students.put)
+
+    .delete("/students", students.delete)
 
 // routes.use(function (req, res) {
 //     res.status(404).render("not-found");

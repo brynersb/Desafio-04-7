@@ -3,6 +3,20 @@ const fs = require("fs")
 const data = require("../data.json")
 const { age, date, aula, grau } = require("../utils")
 
+//### functions Teachers =>
+
+//index
+
+exports.index = function (req, res) {
+    return res.render("./teachers/index", { teachers: data.teachers })
+}
+
+//create
+
+exports.create = function (req, res) {
+    return res.render("./teachers/create")
+}
+
 //show
 exports.show = function (req, res) {
 
@@ -18,14 +32,6 @@ exports.show = function (req, res) {
     }
 
     const keys = Object.keys(req.body)
-
-    // let aula = ""
-
-    // if (foundTeacher.aula_type  == "distancia"){
-    //     aula = "A Distancia "
-    // }else{
-    //     aula = "Aula Presencial"
-    // }
 
     const teacher = {
         ...foundTeacher,
@@ -58,10 +64,10 @@ exports.post = function (req, res) {
     const created_at = Date.now()
 
     let id = 1
-    const lastTeacher = data.teachers[data.teachers.length - 1].id
+    const lastTeacher = data.teachers[data.teachers.length - 1]
 
     if (lastTeacher) {
-        id = lastTeacher + 1
+        id = lastTeacher.id + 1
     }
 
     data.teachers.push({
@@ -162,4 +168,5 @@ exports.delete = function (req, res) {
         return res.redirect("/teachers")
     })
 }
+
 

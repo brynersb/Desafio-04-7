@@ -6,7 +6,7 @@
 ## :rocket: Sobre o desafio
 Nessa etapa você deve reaproveitar para os estudantes toda a estrutura já criada para os professores. Além disso, deve implementar a lógica do menu ativo.
 
-### Estrutura:
+### Estrutura:[ok]
 
 Reaproveite o código obedecendo os seguintes padrões:
 
@@ -19,7 +19,7 @@ Crie as rotas dos estudantes seguindo a mesma estrutura dos professores.
 
 Crie um arquivo scripts.js e implemente a lógica do menu ativo utilizando o location e o includes da string. Além disso, implemente um botão de cadastro nas páginas de listagem de professores e estudantes.
 
-### Formulario:
+### Formulario:[ok]
 
 Faça os ajustes de professores para estudantes no formulário de criação. Além disso, remova os campos:
 
@@ -33,11 +33,11 @@ Email: campo do tipo email;
 Ano escolar: campo do tipo select com todas as opções de anos escolares entre 5º ano do ensino fundamental e 3º ano do ensino médio;
 Carga horária semanal: campo do tipo number que indica a quantidade de horas de aulas particulares que o aluno irá ter por semana.
 
-### Salvando os dados:
+### Salvando os dados:[ok]
 
 Faça os ajustes de professores para estudantes no método post do arquivo students.js. Além disso, implemente a nova estratégia de id (evitar repetição).
 
-### Apresentação:
+### Apresentação:[ok]
 
 Faça os ajustes de professores para estudantes na página de apresentação dos dados de um estudante. Além disso, faça duas alterações no arquivo utils.js:
 

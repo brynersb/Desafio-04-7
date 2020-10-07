@@ -64,6 +64,22 @@ module.exports = {
                 break;
         }
 
+    },
+
+    grade: function (schoolYear) {
+        switch (schoolYear) {
+            case '5EF': return "5º Ano Fundamental";
+            case '6EF': return "6º Ano Fundamental";
+            case '7EF': return "7º Ano Fundamental";
+            case '8EF': return "8º Ano Fundamental";
+            case '1EM': return "1º Ano Ensino Médio";
+            case '2EM': return "2º Ano Ensino Médio";
+            case '3EM': return "3º Ano Ensino Médio";
+
+            default:
+                break;
+
+        }
     }
 }
 

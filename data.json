@@ -1,4 +1,36 @@
 {
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Pedro barbosa",
+      "birth": 1292716800000,
+      "school_year": "8EF",
+      "email": "pedro.silva@gmail.com",
+      "workload": "6",
+      "created_at": 1601996334243
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Maria silva",
+      "birth": 1292716800000,
+      "school_year": "7EF",
+      "email": "maria@gmail.com",
+      "workload": "10",
+      "created_at": 1601996334243
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/21617784_1532312896825148_3780600650807033875_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_eui2=AeFwJWIqkQdO3EGzAf0IiuwDU81JXQWNdnRTzUldBY12dBbwF2HRr0l6LHk2__rLfGeK3iK_14J_08RkcclwVaYE&_nc_ohc=PhRcwcbYL0cAX_31ZkG&_nc_ht=scontent.frec5-1.fna&oh=0f749a0d29474550380607e3368f9a13&oe=5F99A3CB",
+      "name": "BRYNER TESTE",
+      "birth": 970358400000,
+      "school_year": "3EM",
+      "email": "bry@gmail.com",
+      "workload": "15",
+      "created_at": 1602101164579
+    }
+  ],
   "teachers": [
     {
       "id": 2,
