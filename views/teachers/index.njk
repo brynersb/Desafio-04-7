@@ -22,9 +22,11 @@
                             {{teacher.name}}
                         </td>
                         <td>
-                        {% for materias in teacher.materias.split(',') %}
-                            <span class="areas">{{materias}}</span>
-                        {% endfor %}
+                            {% for materias in teacher
+                                .materias
+                                .split(',') %}
+                                <span class="areas">{{materias}}</span>
+                            {% endfor %}
                         </td>
                         <td>
                             {{teacher.aula_type }}
