@@ -8,7 +8,17 @@ const { age, date, aula, grau } = require("../utils")
 //index
 
 exports.index = function (req, res) {
-    return res.render("./teachers/index", { teachers: data.teachers })
+    const teachers= []
+
+    for ( let teacher of data.teachers){
+
+        teachers.push({
+            ...teacher,
+            aula_type:aula(teacher.aula_type)
+        })
+    }
+    
+    return res.render("./teachers/index", { teachers })
 }
 
 //create
